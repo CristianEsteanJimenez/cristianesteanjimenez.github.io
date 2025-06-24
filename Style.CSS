@@ -139,6 +139,12 @@ i{
     margin-right: 10px;
 }
 
+#rightcol .paragraph {
+    font-size: 15px;
+    text-align: right;
+    margin-right: 10px;
+}
+
 #leftcol .AOP .paragraph li {
     list-style-position: inside;
     display: flex;
@@ -163,6 +169,12 @@ i{
 #leftcol .paragraph li {
     font-family: monospace;
     font-size: 11px;
+    list-style: none;
+}
+
+#rightcol .paragraph li {
+    font-family: monospace;
+    font-size: 15px;
     list-style: none;
 }
 
