@@ -292,3 +292,38 @@ nav h3 {
     align-content: space-around;
     margin-top: 20px;
 }
+
+.gridmultim .resume-content {
+  display: flex;
+  justify-content: space-between; /* space between h3 and dots */
+  align-items: center;             /* vertical align */
+}
+
+
+
+.lang-dots {
+  display: flex;
+  gap: 4px;
+  margin-left: 30px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #ccc;
+ 
+}
+
+.dot.full {
+  background-color: #00b5e2; /* bright blue */
+}
+
+.dot.half {
+  background-color: #88d9f5; /* light blue */
+}
+
+.dot.empty {
+  background-color: #ccc;    /* gray */
+}
