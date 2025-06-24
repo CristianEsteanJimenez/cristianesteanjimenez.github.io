@@ -40,6 +40,35 @@ nav h3 {
     font-size: 10px;
 }
 
+a:-webkit-any-link{
+    color: white;
+}
+
+a:-moz-any-link{
+    color: white;
+}
+
+a:hover{
+    color: #ff5100;
+}
+
+.sn li{
+    float: right;
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.sn ul{
+    list-style: none;
+}
+
+i{
+    font-size: 44px;
+}
+
+
+
+
 .nav-text {
     display: flex;
     flex-direction: column;
@@ -339,6 +368,11 @@ nav h3 {
     margin-top: 20px;
 }
 
+.Contact{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
 .Contact .resume-title {
     font-variant: small-caps;
     border-bottom: 2px none #444;
@@ -374,4 +408,15 @@ input[type = "submit"]{
     padding: 10px;
     grid-column: 2/3;
     justify-self: end;
+}
+
+.sn .resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px none #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.sn{
+    margin-left: 10px;
 }
