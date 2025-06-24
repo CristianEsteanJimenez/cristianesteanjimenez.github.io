@@ -1,0 +1,284 @@
+/* CSS General elements*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Helvetica Neue', sans-serif;
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-color: #ff5100;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    /* 👈 Turn nav into a flex container */
+    align-items: center;
+    /* 👈 Vertically center .nav-text */
+    justify-content: center;
+    /* 👈 Horizontally center .nav-text */
+    z-index: 999;
+
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+nav h3 {
+    font-size: 10px;
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Stack h2 and h3 vertically */
+    align-items: center;
+    justify-content: center;
+    /* Optional: center align if needed */
+}
+
+.content {
+    padding-top: 120px;
+    /* push everything below the nav */
+}
+
+#leftcol {
+    float: left;
+    width: 25%;
+    height: auto;
+    background-color: #e6e6e6;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    border-radius: 3%;
+
+}
+
+#rightcol {
+    width: 70%;
+    margin-left: 28%;
+    margin-right: 2%;
+    height: auto;
+    background-color: antiquewhite;
+    margin-bottom: 25px;
+
+
+}
+
+#leftcol .subtittle::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#leftcol .subtittle button {
+    background-color: #ff5100;
+    font-size: 11px;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: #fff;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+#leftcol .subtittle button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+#leftcol .paragraph {
+    font-size: 11px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#leftcol .AOP .paragraph li {
+    list-style-position: inside;
+    display: flex;
+    justify-content: space-between;
+    /* space between text and bullet */
+    flex-direction: row;
+    /* reverse order: bullet on right */
+    align-items: center;
+
+}
+
+#leftcol .AOP .paragraph li::before {
+    content: "*";
+    /* manual bullet */
+    color: #ff5100;
+    /* optional: your theme color */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* space between text and bullet */
+}
+
+#leftcol .paragraph li {
+    font-family: monospace;
+    font-size: 11px;
+    list-style: none;
+}
+
+.Visapicture img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    padding: 10 10 10 10;
+
+}
+
+
+.resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.resume-entry {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.resume-left {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.resume-date {
+    border-right: 2px solid #444;
+    padding-right: 15px;
+    font-weight: 300;
+    margin-right: 15px;
+    white-space: nowrap;
+    min-width: 90px;
+}
+
+.Degree .resume-date{
+    border-right: 2px none #222;
+    padding-right: 15px;
+    font-weight: 300;
+    margin-right: 15px;
+    white-space: nowrap;
+    min-width: 90px;
+    
+}
+.resume-content h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 5px 0;
+}
+
+.icon {
+    color: #ff5100;
+    margin-left: 5px;
+}
+
+.description {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.resume-logo {
+    height: 50px;
+    align-self: start;
+}
+
+.DegreeGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-content: space-around;
+
+}
+
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.skill-item .subtittle {
+  flex: 0 0 65px; /* fixed width for buttons */
+}
+
+.skill-item .subtittle button {
+  background-color: #b3b3b3;
+  font-size: 11px;
+  border-radius: 3px;
+  color: #222;
+  padding: 5px 10px;
+  border: groove;
+  width: 100%;
+  text-align: center;
+}
+
+
+.skill-item .container {
+  flex: 0 0 65%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  line-height: 20px;
+  color: white;
+  padding-left: 5px;
+  font-size: 11px;
+  text-align: right;
+}
+
+.Matlab { width: 80%; background-color: #ff5100; }
+.Latex  { width: 70%; background-color: #f98000; }
+.Python { width: 60%; background-color: #f2a03d; }
+.Comsol { width: 70%; background-color: #fcb800; }
+.Blender{ width: 30%; background-color: #ffbb55; }
+
+
+.Curriculum .resume-date{
+    border-right: 2px solid #222;
+    padding-right: 15px;
+    font-weight: 300;
+    margin-right: 15px;
+    white-space: nowrap;
+    min-width: 90px;
+    
+}

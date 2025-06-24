@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Short Resumé</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fff;
+      padding: 40px;
+      color: #222;
+    }
+
+    .resume-section {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .resume-title {
+      font-variant: small-caps;
+      font-size: 24px;
+      border-bottom: 1px solid black;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+    }
+
+    .resume-entry {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .resume-left {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
+
+    .resume-date {
+      border-right: 1px solid #444;
+      padding-right: 15px;
+      font-weight: 300;
+      margin-right: 15px;
+      white-space: nowrap;
+      min-width: 90px;
+    }
+
+    .resume-content h3 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .location {
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 5px 0;
+    }
+
+    .icon {
+      color: #ff5100;
+      margin-left: 5px;
+    }
+
+    .description {
+      font-size: 0.95em;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .resume-logo {
+      height: 50px;
+      align-self: start;
+    }
+  </style>
+</head>
+<body>
+
+<section class="resume-section">
+  <h2 class="resume-title">Short Resumé</h2>
+
+  <!-- First Entry -->
+  <div class="resume-entry">
+    <div class="resume-left">
+      <div class="resume-date">2018–2021</div>
+      <div class="resume-content">
+        <h3><strong>Young researcher at the ITM</strong></h3>
+        <p class="location">Medellin · Colombia <span class="icon">📍</span></p>
+        <p class="description">
+          Research support to the project “modal multiplexer based on optical fibers with few modes for applications in optical communications”. 
+          Approved in the 2016 ITM convocation. <strong>Group:</strong> Automatic, Electronics and Computer Science (AEyCC). 
+          <strong>Advisor:</strong> Nelson Alonso Correa Rojas.
+        </p>
+      </div>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Logo_ITM_Colombia.png" alt="ITM logo" class="resume-logo">
+  </div>
+
+  <!-- Second Entry -->
+  <div class="resume-entry">
+    <div class="resume-left">
+      <div class="resume-date">2022–2024</div>
+      <div class="resume-content">
+        <h3><strong>Master's student at XYZ University</strong></h3>
+        <p class="location">Paris · France <span class="icon">📍</span></p>
+        <p class="description">
+          Thesis work focused on nonlinear fiber optics and mode-locked lasers under the supervision of Dr. Photon. 
+          <strong>Program:</strong> MSc Photonics. <strong>Lab:</strong> Fiber Research Group.
+        </p>
+      </div>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Universit%C3%A9_de_Paris_logo_2020.png" alt="XYZ University logo" class="resume-logo">
+  </div>
+
+</section>
+
+</body>
+</html>
