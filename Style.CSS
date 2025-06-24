@@ -8,6 +8,7 @@ body {
     background-color: #fff;
     color: #222;
     font-weight: 400;
+    line-height: 24px;
     font-family: 'Helvetica Neue', sans-serif;
 
 }
@@ -70,7 +71,7 @@ nav h3 {
     margin-left: 28%;
     margin-right: 2%;
     height: auto;
-    background-color: antiquewhite;
+    background-color: white;
     margin-bottom: 25px;
 
 
@@ -326,4 +327,51 @@ nav h3 {
 
 .dot.empty {
   background-color: #ccc;    /* gray */
+}
+
+
+.academicgrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-content: space-around;
+    margin-top: 20px;
+}
+
+.Contact .resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px none #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*itemform*/
+.itemform{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.itemform label{
+    font-weight: 700;
+}
+
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+
+input[type = "submit"]{
+    background-color: #222;
+    border-radius: 5px;
+    border: 1px solid #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
 }
