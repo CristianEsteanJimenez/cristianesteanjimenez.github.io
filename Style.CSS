@@ -23,11 +23,8 @@ nav {
     padding-top: 10px;
     padding-bottom: 5px;
     display: flex;
-    /* 👈 Turn nav into a flex container */
     align-items: center;
-    /* 👈 Vertically center .nav-text */
     justify-content: center;
-    /* 👈 Horizontally center .nav-text */
     z-index: 999;
 
 }
@@ -73,17 +70,14 @@ i{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* Stack h2 and h3 vertically */
     align-items: center;
     justify-content: center;
-    /* Optional: center align if needed */
 }
 
 .content {
     padding-top: 120px;
     display: flex;
     align-items: stretch;
-    /* push everything below the nav */
 }
 
 #leftcol {
@@ -159,21 +153,17 @@ i{
     list-style-position: inside;
     display: flex;
     justify-content: space-between;
-    /* space between text and bullet */
     flex-direction: row;
-    /* reverse order: bullet on right */
+
     align-items: center;
 
 }
 
 #leftcol .AOP .paragraph li::before {
     content: "*";
-    /* manual bullet */
     color: #ff5100;
-    /* optional: your theme color */
     margin-left: 10px;
     margin-right: 10px;
-    /* space between text and bullet */
 }
 
 #leftcol .paragraph li {
@@ -443,13 +433,13 @@ input[type = "submit"]{
 .footer {
   width: 100%;
   display: flex;
-  justify-content: center;        /* center content inside footer */
+  justify-content: center;     
   margin-bottom: 10px;
 }
 .footer ul {
   list-style: none;
   display: flex;
-  flex-direction: row; /* stack items vertically */
+  flex-direction: row; 
   align-items: center;
   gap: 15px;
   padding: 0;
@@ -462,7 +452,7 @@ input[type = "submit"]{
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 8px; /* space between icon and text */
+  gap: 8px; 
 }
 
 .footer li a:hover {
