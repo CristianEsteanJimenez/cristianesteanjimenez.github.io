@@ -373,7 +373,7 @@ i{
 
 .academicgrid{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
     justify-content: space-between;
     align-content: space-around;
