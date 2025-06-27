@@ -60,11 +60,11 @@ grid-area: nav;
   color: #222;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   display: inline-block;
-  width: 105px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
-  margin-right: 5px;
 }
 
 
@@ -81,9 +81,9 @@ grid-area: nav;
     }
 
 #leftcol {
-    width: 100%;
+    margin-left: 2%;
+    width: 95%;
     background-color: #e6e6e6;
-    margin-left: 30px;
     margin-bottom: 25px;
     border-radius: 1%;
     display: flex;
@@ -165,4 +165,141 @@ grid-area: nav;
 }
 
 
+.contact{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.contact .resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px none #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*itemform*/
+.itemform{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.itemform label{
+    font-weight: 700;
+}
+
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+
+input[type = "submit"]{
+    background-color: #222;
+    border-radius: 5px;
+    border: 1px solid #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+.sn .resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px none #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.sn{
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+
+.sn a:-webkit-any-link{
+    color: white;
+}
+
+.sn a:-moz-any-link{
+    color: white;
+}
+
+.sn a:hover{
+    color: #ff5100;
+}
+
+.sn li{
+    float: right;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.sn ul{
+    list-style: none;
+}
+
+.sn i{
+    font-size: 34px;
+}
+
 /* aside finsh*/
+
+/*Article start main atrributes*/
+
+main {
+      grid-area: main;
+      margin-left: 10px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+
+.resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.resume-entry {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.resume-left {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.resume-date {
+    border-right: 2px solid #444;
+    padding-right: 15px;
+    font-weight: 300;
+    margin-right: 15px;
+    white-space: nowrap;
+    min-width: 90px;
+}
+
+.resume-logo {
+    height: 50px;
+    align-self: start;
+}
+
+.paragraph li {
+    text-align: right;
+    font-family: monospace;
+    font-size: 15px;
+    list-style: none;
+}
+
+/*Article start main atrributes*/
