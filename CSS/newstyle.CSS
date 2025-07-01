@@ -26,7 +26,7 @@ header {
     grid-area: header;
     background-color: #ff5100;
     color: white;
-    height: 100px;
+    height: 40px;
     padding-top: 10px;
     padding-bottom: 5px;
     display: flex;
@@ -45,12 +45,12 @@ header h2 {
 
 
 .navmenu {
-grid-area: nav;
+    grid-area: nav;
   display: flex;
   flex-wrap: wrap;               /* allow wrapping if too long */
   justify-content: center;       /* center links */
   align-items: center;
-  background-color: white;
+  background-color: #ff5100;
   padding: 10px 0;
   gap: 10px;                      /* space between links */
 }
@@ -77,6 +77,7 @@ grid-area: nav;
 /*aside start*/
  aside {
       grid-area: aside;
+      margin-top: 20px;
 
     }
 
@@ -96,7 +97,7 @@ grid-area: nav;
     clear: both;
 }
 
-.leftcol-content {
+.leftcolcontent {
   flex-grow: 1;
 }
 
@@ -253,6 +254,7 @@ input[type = "submit"]{
 main {
       grid-area: main;
       margin-left: 10px;
+      margin-top: 20px;
     }
 
     section {
@@ -303,3 +305,119 @@ main {
 }
 
 /*Article start main atrributes*/
+
+/* Start Miscellanea*/
+
+.DegreeGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+/*Finish Miscellanea*/
+
+/* Skills bar start*/
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.skill-item .subtittle {
+  flex: 0 0 65px; /* fixed width for buttons */
+}
+
+.skill-item .subtittle button {
+  background-color: #b3b3b3;
+  font-size: 11px;
+  border-radius: 3px;
+  color: #222;
+  padding: 5px 10px;
+  border: groove;
+  width: 100%;
+  text-align: center;
+}
+
+
+.skill-item .container {
+  flex: 0 0 65%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  line-height: 20px;
+  color: white;
+  padding-left: 5px;
+  font-size: 11px;
+  text-align: right;
+}
+
+.Matlab { width: 80%; background-color: #ff5100; }
+.Latex  { width: 70%; background-color: #f98000; }
+.Python { width: 60%; background-color: #f2a03d; }
+.Comsol { width: 70%; background-color: #fcb800; }
+.Blender{ width: 30%; background-color: #ffbb55; }
+
+/*Skills bar finish*/
+
+
+/*Grants and languages grid start*/
+
+.gridmultim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-content: space-around;
+    margin-top: 20px;
+}
+
+.gridmultim .resume-content {
+  display: flex;
+  justify-content: space-between; /* space between h3 and dots */
+  align-items: center;             /* vertical align */
+}
+
+/*Grants and lanuguges finish*/
+
+/*Languages circles style design*/
+
+
+.lang-dots {
+  display: flex;
+  gap: 4px;
+  margin-left: 30px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #ccc;
+ 
+}
+
+.dot.full {
+  background-color: #00b5e2; /* bright blue */
+}
+
+.dot.half {
+  background-color: #88d9f5; /* light blue */
+}
+
+.dot.empty {
+  background-color: #ccc;    /* gray */
+}
+
+/*End Languages circles style design*/
