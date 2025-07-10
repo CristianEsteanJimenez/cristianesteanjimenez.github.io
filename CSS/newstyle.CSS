@@ -315,6 +315,13 @@ section {
 
 /*Article start main atrributes*/
 
+/*
+working on small correction*/
+
+#workingon .paragraph{
+    margin-right: 20px;
+}
+
 /* Start Miscellanea*/
 
 .DegreeGrid {
@@ -522,6 +529,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
 }
